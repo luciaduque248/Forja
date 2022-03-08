@@ -1,0 +1,162 @@
+/* :::::::::::::::: PAGINA GENERAL:::::::::::::::::::::: */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root{
+        --Rufous:#A40101;
+        --Viridian-green:#2CA3AB;
+        --Silver:#C4C4C4;
+        --orange:rgb(220, 118, 51 );
+        --Cadet: rgb(11, 87, 149);
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    
+}
+
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+}
+
+p{
+    color: var(--dark-color);
+    text-align: justify;
+}
+
+/* :::::::::::::::::::::::::::::::::: PARTE LATERAL IZQUIERDA :::::::::::::::::::::::::::::::::::::::: */
+.main{
+    display: flex;
+}
+
+.izq{
+    padding: 3rem 0;
+    width: 25%;
+    height: 560px;
+    background-color: rgb(22, 22, 80);
+}
+.izq img{
+    margin: 2rem 1.5rem 2rem 1rem;
+}
+
+.botones{
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn1{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 4px solid rgb(218, 106, 32);
+    border-radius: 5px;
+    
+}
+
+.btn1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.btn2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.btn3 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.btn2{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 4px solid rgb(218, 106, 32);
+    border-radius: 5px;
+}
+
+.btn3{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 4px solid rgb(218, 106, 32);
+    border-radius: 5px;
+}
+
+
+
+
+/* :::::::::::::::::::::::::::::::::: PARTE LATERAL DERECHA :::::::::::::::::::::::::::::::::::::::: */
+.dere{
+    background-image: url(/img/Desktop\ -\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    overflow: hidden;
+}
+
+.sesion{
+    display: flex;
+    padding: 0.5rem 0.5rem;
+    width: 220px;
+    background-image: linear-gradient(to right, #a5a2a4, #b1aeb0, #bcbabc, #c8c7c9, #d4d3d5, #d4d3d5, #d4d3d5, #d4d3d5, #c8c7c9, #bcbabc, #b1aeb0, #a5a2a4);
+    margin: 0 47rem;
+    border-radius: 6px;
+}
+
+
+.fa-user1{
+    margin: 0 0.5rem;
+    border: 3px solid rgb(245, 119, 35);
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.sesion p{
+    margin-top: 1rem;
+}
+
+.form-group{
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.form-group h1{
+    font-weight: 400;
+    color:rgb(199, 81, 2);
+}
+
+input{
+    background-color: transparent;
+    padding: 0.6rem 1rem;
+}
+
+.rellenar{
+    margin-top: 4rem;
+}
+
+.fa-iconos{
+    background-color: rgb(22, 22, 80);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    border: 3px solid #2bb6c0;
+    border-radius: 5px;
+}
+
+.form-input{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 300px;
+}
+
+

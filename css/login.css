@@ -1,0 +1,154 @@
+/* :::::::::::::::: PAGINA GENERAL:::::::::::::::::::::: */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root{
+        --Rufous:#A40101;
+        --Viridian-green:#2CA3AB;
+        --Silver:#C4C4C4;
+        --orange:rgb(220, 118, 51 );
+        --Cadet: rgb(11, 87, 149);
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-image: url(/img/10.png);
+    background-size: cover;
+}
+
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+}
+
+p{
+    color: var(--dark-color);
+    text-align: justify;
+}
+
+/* :::::::::::::::::::::::::::::::::: BOTON VOLVER AL INICIO :::::::::::::::::::::::::::::::::::::::: */
+main{
+    margin: 2.8rem 0;
+}
+
+.btn-login{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 9.5rem;
+    height: 2rem;
+    background-color: rgb(34, 34, 110);
+    margin: 1.5rem 50rem 0rem 50rem;
+    padding: 1px 1rem;
+    border-radius: 10px;
+    border-color: #2CA3AB;
+    border-style: solid;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+
+.btn-login a{
+    margin:20px 0;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+.btn-login:hover{
+    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.61), 0 5px 5px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+/* :::::::::::::::::::::::::::::::::: LOGIN :::::::::::::::::::::::::::::::::::::::: */
+.login{
+    background-color: white;
+    align-items: center;
+    margin: 1.5rem 30rem;
+    width: 480px;
+    height: 500px;
+    border-radius: 30px;
+}
+
+.logo{
+    background-color: rgb(173, 216, 230);
+    padding: 3rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.logo p{
+    padding: 1rem 7.5rem;
+}
+
+.logo img{
+    display:block;
+    margin:auto;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.form-group {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.form-group a{
+    color: black;
+}
+
+            .form-group a:visited{
+                color: black;
+            }
+
+            .form-group a:link{
+                color: black;
+            }
+
+.form-label{
+    margin: 0.5rem;
+}
+
+.form-input{
+    border: 2px solid rgb(135, 206, 250);
+    background-color: rgba(173, 216, 230, 0.459);
+    width: 15rem;
+    border-radius: 15px;
+    padding: 0.5rem;
+    outline: none;
+}
+
+.form-olvido{
+    margin-top: 5px;
+}
+
+.btn-naranja{
+    padding: 0.5rem;
+    background-color: rgb(255, 123, 0);
+    color: white;
+    font-weight: 300;
+    border-radius: 6px;
+    margin: 0.3rem 5rem;
+    width: 130px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.btn-naranja a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
