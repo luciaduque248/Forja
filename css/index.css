@@ -195,13 +195,10 @@ header{
     cursor: pointer;
 }
 
-.franjaNaranja{
-    background-image: url(/img/franjaLinea.svg);
-    background-color: #2CA3AB;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:70px;
 
+
+.franjaNaranja img{
+    width: 1350px;
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::::::: BANNER 2 :::::::::::::::::::::::::::::::::::::::: */
