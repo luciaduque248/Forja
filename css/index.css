@@ -44,7 +44,6 @@ header{
 #info{
     width: 100%;
     display: flex;
-    /*margin: 2rem 0rem 1rem 0rem;*/
     font-weight: lighter;
 }
 
@@ -140,7 +139,7 @@ header{
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::  BANNER :::::::::::::::::::::::::::::::::::::::::::::::: */
 .seccion{
-    background-image: url(/img/2.\ medico.png);
+    background-image: url(img/2.\ medico.png);
     background-repeat: no-repeat;
     background-size: contain;
     height:320px;
@@ -169,7 +168,6 @@ header{
     width: 150px;
     height: 2rem;
     background-color: rgb(11, 87, 149);
-    /* margin: 5px 1rem; */
     margin-top: -2rem;
     margin-left: 12rem;
     padding-top: -10px;
@@ -198,7 +196,7 @@ header{
 }
 
 .franjaNaranja{
-    background-image: url(/img/12.\ franja.svg);
+    background-image: url(img/12.\ franja.svg);
     background-color: #2CA3AB;
     background-repeat: no-repeat;
     background-size: cover;

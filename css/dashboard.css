@@ -96,7 +96,7 @@ p{
 
 /* :::::::::::::::::::::::::::::::::: PARTE LATERAL DERECHA :::::::::::::::::::::::::::::::::::::::: */
 .dere{
-    background-image: url(/img/Desktop\ -\ 1.png);
+    background-image: url(img/fondoLogin.png);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
     overflow: hidden;
