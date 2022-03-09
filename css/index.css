@@ -139,7 +139,7 @@ header{
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::  BANNER :::::::::::::::::::::::::::::::::::::::::::::::: */
 .seccion{
-    background-image: url(img/medico.png);
+    background-image: url(../img/medico.png);
     background-repeat: no-repeat;
     background-size: contain;
     height:320px;
@@ -204,17 +204,13 @@ header{
 
 }
 
-/*
-.franjaNaranja img{
-    width: 1350px;
-}
-*/
+
 
 /* ::::::::::::::::::::::::::::::::::::::::::::: BANNER 2 :::::::::::::::::::::::::::::::::::::::: */
 .covid{
     display: flex;
     padding: 2rem 7rem;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.830), rgba(255, 255, 255, 0.830)),url(/img/4.\ covid.jpeg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.830), rgba(255, 255, 255, 0.830)),url(../img/4.\ covid.jpeg);
     background-size:cover;
     background-repeat: no-repeat;
 }
