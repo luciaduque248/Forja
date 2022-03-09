@@ -152,3 +152,7 @@ main{
     color:#ffffff;
 }
 
+input:required {
+    background-color:rgb(173, 216, 230);
+  }
+
