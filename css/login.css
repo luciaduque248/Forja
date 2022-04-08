@@ -163,7 +163,17 @@ main{
     text-decoration: none;
     color:#ffffff;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .orden{margin: 5rem;}
+    .btnj{margin-left: -15rem;}
+    .logo img{width: 100%; max-width: 200px; margin-bottom: 1rem;}
+    .form-group input{width: 60%;}
+}
+
 @media screen and (min-width: 720px){
+    .orden{margin: 10rem;}
+    .btnj{margin-left: -20rem;}
     .login{
         width: 100%;
         
@@ -174,6 +184,8 @@ main{
     } 
 }
 @media screen and (min-width: 1024px){
+    .orden{margin: 0rem;}
+    .btnj{margin-left: -7rem;}
     .login{
         width: 100%;
         
