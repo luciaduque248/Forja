@@ -254,7 +254,7 @@ body{overflow: hidden;}
     and (device-height : 896px) 
     and (-webkit-device-pixel-ratio : 2) { 
         .izq{width: 80%;height: 900px;}
-        .dere{margin-left: 0rem;height: 738px;}
+        .dere{margin-left: 0rem;height: 838px;}
         body{overflow: hidden;}
 }
 
