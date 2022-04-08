@@ -242,7 +242,7 @@ input{
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .izq{width: 80%; margin-right: 0rem;}
+    .izq{width: 80%; margin-right: 7rem;}
 }
 
 @media screen and (min-width: 1024px){
