@@ -252,9 +252,10 @@ body{overflow: hidden;}
 @media only screen 
     and (device-width : 414px) 
     and (device-height : 896px) 
-    and (-webkit-device-pixel-ratio : 2) { .izq{width: 80%;}
-    .dere{margin-left: 0rem;height: 738px;}
-    body{overflow: hidden;}
+    and (-webkit-device-pixel-ratio : 2) { 
+        .izq{width: 80%;height: 900px;}
+        .dere{margin-left: 0rem;height: 738px;}
+        body{overflow: hidden;}
 }
 
 @media screen and (min-width: 1024px){
