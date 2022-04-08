@@ -29,6 +29,7 @@ p{
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::: HEADER :::::::::::::::::::::::::::::::::::::::::::::::: */
+body{overflow-x: hidden;}
 header{
     display: flex;
     justify-content: center;
@@ -225,29 +226,33 @@ table{
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body{overflow-x: hidden;}
     header{
+        overflow-x: hidden;
         flex-direction: column;
         justify-content: center;
         align-content: center;
         align-items: center;
-        width: 500px;
-        padding: 1rem 2rem;
+        width: 380px;
+        padding: 1rem 5rem;
     }
-    .encabezado{margin: 0 3rem;}
+    .encabezado{margin: 0 5rem;}
     .iconos{display:flex;flex-direction: row}
 
     .franjaNaranja{
+        overflow-x: hidden;
         background-image: url(../img/3.\ franjaninios.svg);
         background-repeat: no-repeat;
         background-size: cover;
         height:50px;
-        width: 500px;
+        width: 538px;
         border-bottom: 5px solid rgb(2, 190, 190);
     }
 
     .rellenar{display: flex;flex-direction: column;}
-    .fa-busqueda{width: 20px; margin: auto;margin-top: 1rem;}
-    table{width: 320px;}
+    .fa-busqueda{width: 20px; margin: auto; margin-top: 1rem;}
+    table{width: 380px;}
+    .pie-pagina .grupo-2{width: 518px;}
 }
 
 @media screen and (min-width: 760px) {
