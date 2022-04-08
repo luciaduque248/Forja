@@ -248,6 +248,8 @@ input{
     color:rgb(199, 81, 2);
 }
 
+.btn-menu{width: 300px;}
+
 .rellenar input{width: 100%;}
 }
 
