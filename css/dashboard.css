@@ -220,7 +220,7 @@ input{
     justify-content: center ;
     flex-direction: column;
 }
-.relelnar .fa-iconos{
+.rellenar .fa-iconos{
     display: flex;
     flex-direction: row;
 }
@@ -239,6 +239,16 @@ input{
     border-right: 0;
     border-left: 0;
     width: 300px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+.form-group h1{
+    font-size: 30px;
+    font-weight: 400;
+    color:rgb(199, 81, 2);
+}
+
+.rellenar input{width: 100%;}
 }
 
 @media screen and (min-width: 1024px){
