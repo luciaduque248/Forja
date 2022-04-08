@@ -253,6 +253,13 @@ input{
 .rellenar input{width: 100%;}
 }
 
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) {
+        .btn-menu{width: 400px;} 
+    }
+
 @media screen and (min-width: 1024px){
 
     body{
