@@ -367,7 +367,7 @@ p{
 body{overflow-x: hidden;}
 
 /*--------------------- | RESOLUCIÓN CELULAR | ---------------------*/
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio:0) {
     .telefono{overflow: hidden;width: 150px;padding-left: 1rem;}
     .ubicacion{overflow: hidden;width: 160px;padding-left: 1rem;}
     .seccion{background-size: contain;width: 425px;height: 130px;}
@@ -385,7 +385,7 @@ body{overflow-x: hidden;}
 }
 
 /*--------------------- | RESOLUCIÓN TABLETA | ---------------------*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio:0) {
     .botonSesion{
         display: flex;
         grid-area: item4;
@@ -491,7 +491,7 @@ body{overflow-x: hidden;}
 }
 
 /*--------------------- | RESOLUCIÓN MEDIA | ---------------------*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio:0) {
    
         .telefono p{  
         font-size: 16px;

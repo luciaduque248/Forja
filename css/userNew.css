@@ -344,7 +344,7 @@ select {
 
 
 /* :::::::::: CELULAR :::::::::: */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio:0)  {
     header{width: 1290px;overflow: hidden;}
     .franjaNaranja{width: 1290px;}
     .titulo{width: 1270px;}
@@ -360,14 +360,14 @@ select {
     .pie-pagina .grupo-2{width: 1270px;}
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 760px) and (-webkit-min-device-pixel-ratio:0) {
     .dentro{
         display: block;
         overflow-x: auto;
     }
 }
 
-@media (min-width: 767px){
+@media (min-width: 767px) and (-webkit-min-device-pixel-ratio:0) {
     header{width: 1290px;overflow: hidden;}
     .franjaNaranja{width: 1290px;}
     .titulo{width: 1270px;}
