@@ -318,8 +318,17 @@ select {
     margin: 1.5rem;
 }
 
+.dentro{
+    display: block;
+    overflow-x: scroll;
+}
 
-
+@media screen and (min-width: 760px) {
+    .dentro{
+        display: block;
+        overflow-x: auto;
+    }
+}
 
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::: PIE DE PAGINA :::::::::::::::::::::::::::::::::::::::: */
