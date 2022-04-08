@@ -30,8 +30,6 @@ p{
 /* ::::::::::::::::::::::::::::::::::::::::::::::::  HEADER :::::::::::::::::::::::::::::::::::::::::::::::: */
 @media screen and (min-width: 320px) {
     
-
-
 .telefono{
     grid-area: item1;
       
@@ -366,16 +364,34 @@ p{
     
 }
 
+body{overflow-x: hidden;}
+
+/*--------------------- | RESOLUCIÓN CELULAR | ---------------------*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .telefono{overflow: hidden;width: 150px;padding-left: 1rem;}
+    .ubicacion{overflow: hidden;width: 160px;padding-left: 1rem;}
+    .seccion{background-size: contain;width: 425px;height: 130px;}
+    .grid-item3{margin-left: 1rem;}
+    .grid-item5 img{object-fit: contain;margin-left: -5rem;margin-top: 1rem;}
+    .seccion1 h2{letter-spacing: 0px; font-size: 20px;}
+    .btn-login2{margin-top: 0rem;margin-left: 4rem;}
+    .franjaNaranja{width: 455px;background-size: contain;}
+    .covid{width: 390px;}
+    .preguntas{width: 455px;}
+    .pie-pagina .grupo-2{width: 435px;}
+    .tabla1{margin-left: -1.2rem;}
+    .tabla2{margin-left: -0.9rem;}
+    .tabla2 a{margin-left: 4rem;}
+}
+
 /*--------------------- | RESOLUCIÓN TABLETA | ---------------------*/
 @media screen and (min-width: 768px) {
     .botonSesion{
         display: flex;
         grid-area: item4;
-        
         align-items: center;
         justify-content: center;
         
-    
     }
     .grid-header{
         grid-template-areas: 
@@ -401,7 +417,6 @@ p{
     transition-duration: 0.1s;
     }
     .telefono p{
-        
         font-size: 14px;
         
     }
@@ -410,15 +425,12 @@ p{
         width: 20rem;
     }
     .seccion{
-        
         height: 220px;;
         padding: 3rem ;
         
     }
     
     .seccion1 h2{
-        
-        
         letter-spacing: -2px;
         padding-left: 2rem;
         width: 20rem;
@@ -539,14 +551,7 @@ p{
         grid-template-columns: 1.5fr 1fr 1fr ;
         grid-template-areas: 
         " item6 item1 item2 item4"  
-        " item3 item5 item5 item5"  
-        ;
+        " item3 item5 item5 item5";
     }
-    
-   
-   
-    
-    
-    
     
 }
