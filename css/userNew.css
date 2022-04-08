@@ -367,7 +367,7 @@ select {
     }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 767px){
     header{width: 1290px;overflow: hidden;}
     .franjaNaranja{width: 1290px;}
     .titulo{width: 1270px;}
