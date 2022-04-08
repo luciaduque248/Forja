@@ -59,7 +59,7 @@ header{
 }
 
 .franjaNaranja{
-    background-image: url(../img/12.\ franja.svg);
+    background-image: url("../img/3.\ franjaninios.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height:70px;
@@ -87,7 +87,7 @@ header{
     background-color: rgb(22, 22, 80);
     color: white;
     margin: 0 0.3rem;
-    width: 1345px;
+    width: auto;
     text-align: center;
     border-radius: 5px;
     
@@ -105,7 +105,7 @@ header{
     border: 2px solid gray;
     margin: 0 0.3rem;
     padding: 3rem;
-    width: 1242px;
+    width: auto;
 }
 
 .dentro{

@@ -37,16 +37,20 @@ p{
 
 .izq{
     padding: 3rem 0;
-    width: 25%;
+    width: 30%;
     height: 560px;
+    
     background-color: rgb(22, 22, 80);
+    grid-area: iz;
 }
-.izq img{
+.logo{
+    display: none;
     margin: 2rem 1.5rem 2rem 1rem;
+    width: 80%;
 }
 
 .botones{
-    margin: 3rem 0;
+    margin: 4rem 0;
     display: flex;
     flex-direction: column;
 }
@@ -91,24 +95,79 @@ p{
     border-radius: 5px;
 }
 
+#chk-menu{
+    display: none;
+    
+}
+#chk-menu:checked ~ .botones{
+    display:block;
+    display: flex;
+    flex-direction: column;
+    
+}
+#chk-menu:checked ~ .logo{
+    display:block;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-menu{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 10px;
+    
+
+}
+.botones{
+    
+    display: none;
+   
+}
+.item{
+    padding: 0.7rem;
+    text-decoration: none;
+    color: white;
+}
+.item:hover{
+    color: rgba(255, 255, 255, 0.4);
+}
+
 
 
 
 /* :::::::::::::::::::::::::::::::::: PARTE LATERAL DERECHA :::::::::::::::::::::::::::::::::::::::: */
-.dere{
-    background-image: url(../img/fondoLogin.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100vh;
+
+main{
     overflow: hidden;
+    display: grid;
+    gap: 5px;
+    grid-template-columns:5fr auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "iz de"; 
+}  
+.dere{
+    grid-area: de;
+    overflow: hidden;
+    display: grid;
+    gap: 5px;
+    grid-template-columns:auto;
+    grid-template-rows: 70px 1fr auto;
+    grid-template-areas: 
+    "item1 "
+    "item2"  
+    "item3";
 }
 
 .sesion{
     display: flex;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem;
     width: 220px;
     background-image: linear-gradient(to right, #a5a2a4, #b1aeb0, #bcbabc, #c8c7c9, #d4d3d5, #d4d3d5, #d4d3d5, #d4d3d5, #c8c7c9, #bcbabc, #b1aeb0, #a5a2a4);
-    margin: 0 47rem;
+    
     border-radius: 6px;
+    grid-area: item1;
 }
 
 
@@ -125,10 +184,26 @@ p{
 }
 
 .form-group{
-    margin: 4rem 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin:  0;
     text-align: center;
+    grid-area: item2;
+    flex-direction: column;
 }
+.franja{
+    width: auto;
+    height: 100px;
+    grid-area: item3;
+    background-size: cover;
+    margin: 0;
+}
+.franja img{
+    width: 100%;
 
+}
 .form-group h1{
     font-weight: 400;
     color:rgb(199, 81, 2);
@@ -140,14 +215,21 @@ input{
 }
 
 .rellenar{
-    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
 }
-
+.relelnar .fa-iconos{
+    display: flex;
+    flex-direction: row;
+}
 .fa-iconos{
+    
     background-color: rgb(22, 22, 80);
     color: white;
     padding: 0.5rem 1rem;
-    margin: 0 0.3rem;
+    margin: 1rem 0.3rem;
     border: 3px solid #2bb6c0;
     border-radius: 5px;
 }
@@ -159,4 +241,34 @@ input{
     width: 300px;
 }
 
+@media screen and (min-width: 1024px){
 
+    body{
+        background-color: ghostwhite;
+    }
+    
+    .botones{
+        display: block;
+        display:block;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-menu{
+        display: none;
+    }
+    .logo{
+        display:block;
+        display: flex;
+        flex-direction: column;
+    }
+    .rellenar{
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        flex-direction: row;
+    }
+    .izq{
+        width: 50%;
+    }
+    
+}

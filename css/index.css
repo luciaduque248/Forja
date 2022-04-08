@@ -1,14 +1,14 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
-:root {
-    --Rufous: #A40101;
-    --Viridian-green: #2CA3AB;
-    --Silver: #C4C4C4;
-    --orange: rgb(220, 118, 51);
-    --Cadet: rgb(11, 87, 149);
+:root{
+        --Rufous:#A40101;
+        --Viridian-green:#2CA3AB;
+        --Silver:#C4C4C4;
+        --orange:rgb(220, 118, 51 );
+        --Cadet: rgb(11, 87, 149);
 }
 
 
@@ -17,80 +17,68 @@ body {
     font-size: 16px;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3{
     font-family: 'Poppins', sans-serif;
     color: var(--dark-color);
 }
 
-p {
+p{
     color: var(--dark-color);
     text-align: justify;
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::  HEADER :::::::::::::::::::::::::::::::::::::::::::::::: */
+@media screen and (min-width: 320px) {
+    
 
-.telefono {
+
+.telefono{
     grid-area: item1;
-
+      
 }
-
-.ubicacion {
+.ubicacion{
     grid-area: item2;
-
+    
 }
-
-.grid-item3 {
+.grid-item3{
     display: flex;
     grid-area: item3;
     justify-content: center;
     align-items: center;
     margin: 1rem;
-
+    
 }
 
-.botonSesion {
-    display: flex;
-    grid-area: item4;
-
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-.grid-item5 {
+.grid-item5{
     grid-area: item5;
-
+    
 }
-
-.grid-item6 {
+.grid-item6{
     grid-area: item6;
-    background-color: rgb(110, 110, 110);
+    
 }
-
-.grid-header {
+.botonSesion{
+        display: none;
+       
+        
+        
+    }
+    
+    
+.grid-header{
     display: grid;
     gap: 5px;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas:
-        "item1 item2"
-        "item5 item5"
-        "item3 item3"
-
-
-    ;
-
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    grid-template-areas: 
+    "item1 item2"
+    "item5 item5"  
+    "item3 item3";  
 }
 
 
-.fa-iconHead {
-    background-color: rgb(220, 118, 51);
+.fa-iconHead{
+    background-color: rgb(220, 118, 51 );
     padding: 6px 6px;
     border-radius: 50%;
     color: white;
@@ -99,30 +87,30 @@ p {
 
 
 
-.telefono {
+.telefono{
     display: flex;
     margin: 1rem 2rem 0 2rem;
     align-items: center;
-
+    
 }
 
-.telefono p {
+.telefono p{
     text-align: left;
     padding-left: 1rem;
     padding-bottom: 0.1rem;
     font-weight: 300;
     width: 8rem;
     font-size: 12px;
-
+    
 }
 
-.ubicacion {
+.ubicacion{
     display: flex;
     margin: 1rem 1rem 0 1rem;
     align-items: center;
 }
 
-.ubicacion p {
+.ubicacion p{
     text-align: left;
     padding-left: 1.5rem;
     padding-bottom: 0.1rem;
@@ -133,41 +121,40 @@ p {
 
 
 
-.btn-login {
-
+.btn-login{
+    
     display: none;
 }
-
-.btn-login i {
+.btn-login i{
     padding: 1px 5px;
 }
 
-.btn-login a {
-    margin: 20px 0;
+.btn-login a{
+    margin:20px 0;
     text-decoration: none;
     color: #ffffff;
     text-align: center;
 }
 
-.btn-login:hover {
-    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.61), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+.btn-login:hover{
+    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.61), 0 5px 5px 0 rgba(0,0,0,0.19);
     cursor: pointer;
 }
 
-.icono {
+.icono{
     display: flex;
     flex-direction: row;
     padding: 0.1rem 0.6rem 1rem 3rem;
 }
 
-.logoForja {
+.logoForja{
     padding-left: 10px;
     padding-right: 1rem;
     max-height: 40vw;
     height: 100%;
 }
 
-.lineaElectro {
+.lineaElectro{
     width: 80%;
     padding-left: 100px;
 }
@@ -175,24 +162,24 @@ p {
 
 
 
-.fa-icon {
-    color: rgb(220, 118, 51);
+.fa-icon{
+    color: rgb(220, 118, 51 );
     font-size: 50px;
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::  BANNER :::::::::::::::::::::::::::::::::::::::::::::::: */
-.seccion {
+.seccion{
     background-image: url(../img/medico.png);
     background-repeat: no-repeat;
-
+    
     background-size: cover;
-    height: 180px;
+    height:180px;
     padding: 1rem 1rem 1rem 1rem;
-
+    
 }
 
-.seccion1 h2 {
-    font-size: 3.7vw;
+.seccion1 h2{
+    font-size:3.7vw;
     font-weight: 300;
     color: rgb(202, 110, 48);
     letter-spacing: -2px;
@@ -202,14 +189,14 @@ p {
 
 }
 
-.seccion1 h1 {
-    font-size: 3vw;
+.seccion1 h1{
+    font-size:3vw;
     font-weight: 400;
     padding: 0 6.5rem;
     margin-top: 1vw;
 }
 
-.btn-login2 {
+.btn-login2{
     display: flex;
     align-items: center;
     width: 120px;
@@ -225,31 +212,30 @@ p {
     cursor: pointer;
     transition-duration: 0.1s;
 }
-
-.btn-login2 i {
+.btn-login2 i{
     padding: 1px 8px;
-
+    
 }
 
-.btn-login2 a {
-    margin: 20px 0;
+.btn-login2 a{
+    margin:20px 0;
     text-decoration: none;
     color: #ffffff;
     text-align: center;
     font-size: 12px;
 }
 
-.btn-login2:hover {
-    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.61), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+.btn-login2:hover{
+    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.61), 0 5px 5px 0 rgba(0,0,0,0.19);
     cursor: pointer;
 }
 
-.franjaNaranja {
+.franjaNaranja{
     background-image: url(../img/franjaLinea.svg);
     background-color: #2CA3AB;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40px;
+    height:40px;
 
 }
 
@@ -257,16 +243,16 @@ p {
 
 
 /* ::::::::::::::::::::::::::::::::::::::::::::: BANNER 2 :::::::::::::::::::::::::::::::::::::::: */
-.covid {
+.covid{
     display: flex;
     padding: 2rem 2rem;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.830), rgba(255, 255, 255, 0.830)), url(../img/4.\ covid.jpeg);
-    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.830), rgba(255, 255, 255, 0.830)),url(../img/4.\ covid.jpeg);
+    background-size:cover;
     background-repeat: no-repeat;
     flex-direction: column;
 }
 
-.fa-fondo {
+.fa-fondo{
     background-color: rgb(177, 0, 0);
     border-radius: 50%;
     padding: 5px 8px;
@@ -275,7 +261,7 @@ p {
 }
 
 
-.fa-fondo1 {
+.fa-fondo1{
     background-color: rgb(177, 0, 0);
     border-radius: 80%;
     padding: 18px 12px;
@@ -286,14 +272,14 @@ p {
 
 
 
-.tabla1 h1 {
+.tabla1 h1{
     font-size: 20px;
     font-weight: 400;
     color: rgb(11, 87, 149);
     width: 25rem;
 }
 
-.tabla1 ul li {
+.tabla1 ul li{
     margin: 1rem 5rem;
     font-size: 15px;
     font-weight: 200;
@@ -302,73 +288,70 @@ p {
 
 }
 
-.fa-checkMargin {
-    margin: 0.5rem 1rem;
-    color: rgb(177, 0, 0);
+        .fa-checkMargin{
+            margin: 0.5rem 1rem;
+            color: rgb(177, 0, 0);
+            
+        }
 
-}
 
 
-
-.tabla2 h1 {
+.tabla2 h1{
     font-size: 20px;
     font-weight: 400;
     color: rgb(11, 87, 149);
 }
-
-.tabla2 p {
+.tabla2 p{
     font-size: 15px;
 }
-
-.tabla2 img {
+.tabla2 img{
     width: 30%;
-    display: block;
-    margin: auto;
+    display:block;
+    margin:auto;
 }
 
-.tabla2 a {
+.tabla2 a{
     margin-left: 6.5rem;
 }
 
-.tabla2 a:visited {
-    color: rgb(11, 87, 149);
-}
+    .tabla2 a:visited{
+        color: rgb(11, 87, 149);
+    }
 
-.tabla2 a:link {
-    color: rgb(11, 87, 149);
-}
+    .tabla2 a:link{
+        color: rgb(11, 87, 149);
+    }
 
-.preguntas {
+.preguntas{
     background-color: rgb(51, 51, 51);
     margin-bottom: 1rem;
 }
 
-.preguntas p {
+.preguntas p{
     background-color: rgb(10, 10, 36);
     margin-bottom: 0.6rem;
     margin-left: 0rem;
     margin-right: 0rem;
     padding: 0.5rem;
     font-size: 12px;
-
+    
 }
 
-.preguntas a {
+.preguntas a{
     text-decoration: none;
     color: white;
 }
 
-.preguntas a:visited {
-    color: white;
-    ;
+.preguntas a:visited{
+    color: white;;
 }
 
-.preguntas a:link {
+.preguntas a:link{
     color: white;
 }
-
+}
 /* ::::::::::::::::::::::::::::::::::::::::::::::: PIE DE PAGINA :::::::::::::::::::::::::::::::::::::::: */
-.pie-pagina .grupo-2 {
+.pie-pagina .grupo-2{
     background-color: #000000e1;
     padding: 15px 10px;
     font-family: 'Poppins', sans-serif;
@@ -377,191 +360,193 @@ p {
     text-align: center;
 }
 
-.pie-pagina .grupo-2 small {
+.pie-pagina .grupo-2 small{
     font-size: 12px;
     font-family: Raleway;
-
+    
 }
 
 /*--------------------- | RESOLUCIÓN TABLETA | ---------------------*/
 @media screen and (min-width: 768px) {
-
-    .grid-header {
-        grid-template-areas:
-            "item1 item2"
-            "item5 item5"
-            "item3 item4";
-    }
-
-    .btn-login {
+    .botonSesion{
         display: flex;
+        grid-area: item4;
+        
         align-items: center;
-        width: 9.5rem;
-        height: 2rem;
-        background-color: rgb(11, 87, 149);
-        margin: 2rem;
-        margin-right: 3rem;
-        padding-top: 1px;
-        padding-left: 12px;
-        border-style: none;
-        border-radius: 15rem;
-        text-align: center;
-        cursor: pointer;
-        transition-duration: 0.1s;
+        justify-content: center;
+        
+    
     }
-
-    .telefono p {
-
+    .grid-header{
+        grid-template-areas: 
+        "item1 item2"  
+        "item5 item5"  
+        "item3 item4" ;
+    }
+    
+    .btn-login{
+    display: flex;
+    align-items: center;
+    width: 9.5rem;
+    height: 2rem;
+    background-color: rgb(11, 87, 149);
+    margin:  2rem;
+    margin-right: 3rem;
+    padding-top: 1px;
+    padding-left: 12px;
+    border-style: none;
+    border-radius: 15rem;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    }
+    .telefono p{
+        
         font-size: 14px;
-
+        
     }
-
-    .ubicacion p {
+    .ubicacion p{  
         font-size: 14px;
         width: 20rem;
     }
-
-    .seccion {
-
-        height: 220px;
-        ;
-        padding: 3rem;
-
+    .seccion{
+        
+        height: 220px;;
+        padding: 3rem ;
+        
     }
-
-    .seccion1 h2 {
-
-
+    
+    .seccion1 h2{
+        
+        
         letter-spacing: -2px;
         padding-left: 2rem;
         width: 20rem;
         text-align: center;
-
+    
     }
-
-    .seccion1 h1 {
-
+    
+    .seccion1 h1{
+        
         font-weight: 400;
         padding: 0 9rem;
         margin-top: 1vw;
     }
-
-
-    .covid {
-
-
+    
+   
+    .covid{
+        
+        
         padding: 2rem 7rem;
     }
-
-    .tabla1 h1 {
+    .tabla1 h1{
         font-size: 25px;
     }
-
-    .tabla1 ul li {
+    
+    .tabla1 ul li{
         font-size: 18px;
     }
-
-    .tabla2 h1 {
+    .tabla2 h1{
         font-size: 25px;
     }
-
-    .tabla2 p {
+    .tabla2 p{
         font-size: 18px;
     }
-
-    .btn-login2 {
-
+    .btn-login2{
+        
         width: 150px;
-
+        
         margin-top: 2rem;
         margin-left: 8rem;
-
+        
     }
-
-    .btn-login2 i {
+    .btn-login2 i{
         padding: 1px 8px;
-
+        
     }
-
-    .btn-login2 a {
-        margin: 20px 0;
+    
+    .btn-login2 a{
+        margin:20px 0;
         text-decoration: none;
         color: #ffffff;
         text-align: center;
         font-size: 16px;
     }
-
-    .preguntas p {
+    .preguntas p{
         font-size: 14px;
-
+        
     }
 }
 
 /*--------------------- | RESOLUCIÓN MEDIA | ---------------------*/
 @media screen and (min-width: 1024px) {
-    .telefono p {
+   
+        .telefono p{  
         font-size: 16px;
     }
-
-    .ubicacion p {
+    .ubicacion p{  
         font-size: 16px;
         width: 20rem;
     }
-
-    .seccion {
-        height: 320px;
+    .seccion{
+       
+        height:320px;
         padding: 6rem 1rem 1rem 5rem;
+        
     }
-
-    .seccion1 h1 {
-        font-size: 50px;
+    .seccion1 h1{
+        font-size:50px;
         font-weight: 400;
         padding: 0 12rem;
         margin-top: 2px;
     }
-
-    .seccion1 h2 {
-        font-size: 40px;
-        width: 40rem;
-    }
-
-    .btn-login2 {
-
-        width: 150px;
-
-        margin-top: 2rem;
-        margin-left: 14rem;
-
-    }
-
-    .covid {
-
+       
+        .seccion1 h2{
+            font-size:40px;
+            width: 40rem;
+        } 
+        .btn-login2{
+        
+            width: 150px;
+            
+            margin-top: 2rem;
+            margin-left: 14rem;
+            
+        }
+        
+        
+    
+    .covid{
+        
         flex-direction: row;
-
+        
     }
-
-    .tabla1 {
+    .tabla1{
         width: 60%;
     }
-
-    .tabla2 {
-        width: 50%;
-    }
-
-    .preguntas p {
-        font-size: 16px;
-
-    }
+    .tabla2{
+    width: 50%;
+}
+.preguntas p{
+    font-size: 16px;
+    
+}
 }
 
 /*--------------------- | RESOLUCIÓN MACRO | ---------------------*/
 @media screen and (min-width: 1200px) {
-    .grid-header {
-        grid-template-columns: 1.5fr 1fr 1fr;
-        grid-template-areas:
-            " item6 item1 item2 item4"
-            " item3 item5 item5 item5"
+    .grid-header{
+        grid-template-columns: 1.5fr 1fr 1fr ;
+        grid-template-areas: 
+        " item6 item1 item2 item4"  
+        " item3 item5 item5 item5"  
         ;
     }
-
+    
+   
+   
+    
+    
+    
+    
 }

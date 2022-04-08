@@ -15,6 +15,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+   
 }
 
 h1, h2, h3{
@@ -34,8 +35,11 @@ header{
 }
 
 .logo{
-    width: 88%;
+    display: flex;
+    width: 10px;
     margin: 1rem 0;
+    width: 80%;
+    align-items: center;
 }
 
 .iconos{
@@ -59,7 +63,7 @@ header{
 }
 
 .franjaNaranja{
-    background-image: url(../img/12.\ franja.svg);
+    background-image: url("../img/3.\ franjaninios.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height:70px;
@@ -68,23 +72,38 @@ header{
 
 /* :::::::::::::::::::::::::::::::::::::: PRIMERA SECCION :::::::::::::::::::::::::::::::::::::::::::::::: */
 .encabezado{
-    display: flex;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-    margin-left: 10rem;
+    display: grid;
+    grid-template-areas: 
+    "enc1"
+    "enc2"
+    "enc3";
+    
 }
 
 .encabezado button{
     height: 30%;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    grid-area: enc2;
+}
+.btn1{
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
 }
 .encabezado h1{
-    padding: 1rem 15rem;
+    text-align: center;
     font-weight: 500;
     color: rgb(22, 22, 80);
+    grid-area: enc3;
 }
 
-
+.rellenar{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    grid-area: enc1;
+}
 .fa-iconos{
     background-color: rgb(22, 22, 80);
     color: white;
@@ -108,22 +127,22 @@ header{
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::: TABLA :::::::::::::::::::::::::::::::::::::::: */
+
+
 table.colapsado {
     border-collapse: collapse;
     border-color: #2CA3AB;
     border-style: solid;
     margin: 0 5rem;
+
 }
 
-table{
-    overflow: hidden;
-}
+
 
 
 tr, td, th{
     text-align: center;
-    vertical-align: middle;
-    border-collapse: collapse;
+    
 }
 
 th{
@@ -175,6 +194,33 @@ table button{
 
 .fa-user-plus{
     margin-left: 0.5rem;
+}
+table{
+    display: block;
+    overflow-x: scroll;
+}
+
+@media screen and (min-width: 760px) {
+    table{
+        display: block;
+        overflow-x: auto;
+    }
+    .encabezado{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "enc2 enc3 enc1"
+        ;
+        
+    }
+    
+    .btn1{
+        display: flex;
+        margin: 1rem;
+        
+    }
+    
+    
 }
 
 

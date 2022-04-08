@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+   
 }
 
 :root{
@@ -19,6 +19,8 @@ body {
     font-size: 16px;
     background-image: url(../img/10.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1, h2, h3{
@@ -33,7 +35,11 @@ p{
 
 /* :::::::::::::::::::::::::::::::::: BOTON VOLVER AL INICIO :::::::::::::::::::::::::::::::::::::::: */
 main{
-    margin: 2.8rem 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .btn-login{
@@ -43,7 +49,7 @@ main{
     width: 9.5rem;
     height: 2rem;
     background-color: rgb(34, 34, 110);
-    margin: 1.5rem 50rem 0rem 50rem;
+    margin:  1.5rem 2rem 0rem 15rem;
     padding: 1px 1rem;
     border-radius: 10px;
     border-color: #2CA3AB;
@@ -66,13 +72,19 @@ main{
 }
 
 /* :::::::::::::::::::::::::::::::::: LOGIN :::::::::::::::::::::::::::::::::::::::: */
+
 .login{
     background-color: white;
     align-items: center;
-    margin: 1.5rem 30rem;
-    width: 480px;
+    max-width: 480px;
+    width: 80%;
     height: 500px;
     border-radius: 30px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+   
 }
 
 .logo{
@@ -81,10 +93,10 @@ main{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
-
 .logo p{
-    padding: 1rem 7.5rem;
+    text-align: center;
 }
+
 
 .logo img{
     display:block;
@@ -151,4 +163,26 @@ main{
     text-decoration: none;
     color:#ffffff;
 }
+@media screen and (min-width: 720px){
+    .login{
+        width: 100%;
+        
+    } 
+    .btn-login{
+         margin: 1.5rem 30rem 0rem 30rem;
+        
+    } 
+}
+@media screen and (min-width: 1024px){
+    .login{
+        width: 100%;
+        
+    } 
+    .btn-login{
+         margin: 1.5rem 45rem 0rem 45rem;
+        
+    } 
+}
+
+
 
