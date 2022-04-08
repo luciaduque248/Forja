@@ -240,6 +240,8 @@ input{
     border-left: 0;
     width: 300px;
 }
+.dere{height: 676px;}
+body{overflow: hidden;}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .izq{width: 80%;}
@@ -251,8 +253,10 @@ input{
     and (device-width : 414px) 
     and (device-height : 896px) 
     and (-webkit-device-pixel-ratio : 2) { .izq{width: 80%;}
-    .dere{margin-left: 0rem;}}
-    
+    .dere{margin-left: 0rem;height: 728px;}
+    body{overflow: hidden;}
+}
+
 @media screen and (min-width: 1024px){
 
     body{
