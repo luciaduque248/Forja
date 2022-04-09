@@ -28,11 +28,10 @@ p{
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::: HEADER :::::::::::::::::::::::::::::::::::::::::::::::: */
-body{overflow-x: hidden;}
+
 header{
     display: flex;
     background-color: rgb(63, 62, 62);
-    width: 100%;max-width: 1500px;
 }
 
 .logo{
@@ -45,8 +44,6 @@ header{
     margin: 1rem 0;
 
 }
-
-.iconos i{color: black;}
 
 .fa-house-user{
     background-color: rgb(218, 216, 216);
@@ -63,7 +60,7 @@ header{
 }
 
 .franjaNaranja{
-    background-image: url(../img/3.\ franjaninios.svg);
+    background-image: url("../img/3.\ franjaninios.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height:70px;
@@ -72,7 +69,7 @@ header{
 
 /* ::::::::::::::::::::::::::::::::::::::::: ENCABEZADO :::::::::::::::::::::::::::::::::::::::::::::::: */
 .cuadroAfuera button{
-    margin: 1rem 35rem;
+    
     background-color: rgb(214, 102, 27);
     height: 30%;
     padding: 0.5rem 1.5rem;
@@ -106,10 +103,12 @@ header{
 /* ::::::::::::::::::::::::::::::::::::::::: RECUADROS  :::::::::::::::::::::::::::::::::::::::::::::::: */
 
 .cuadroAfuera{
+    
     border: 2px solid gray;
     margin: 0 0.3rem;
     padding: 3rem;
     width: auto;
+    
 }
 
 .dentro{
@@ -117,35 +116,36 @@ header{
     border: 2px solid rgb(134, 133, 133);
     border-radius: 10px;
     padding: 30px 12px;
+    
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::: CONTENIDO  :::::::::::::::::::::::::::::::::::::::::::::::: */
 .seccion1{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: auto;
+
 }
 
 .cuadro1 input{
-    width: 200px;
-    height: fit-content;
+    width: 93%;
+    margin-bottom: 1rem;
     border: 2.8px solid #62A1AA;
     border-radius: 3px;
     padding: 0.5rem;
-}
-
-.cuadro1{
-    margin-left: 1rem;
-    width: 20%;
+    
 }
 
 .cuadro2 input{
     padding: 0.5rem;
     font-size: 15px;
-    width: 200px;
+    width: 93%;
     height: fit-content;
     border: 2.8px solid #62A1AA;
     border-radius: 3px;
 }
+
+
 
 .titulo2{
     border: 2px solid #46737F;
@@ -155,30 +155,31 @@ header{
     color: white;
     border-radius: 10px;
     margin: 1rem 0;
+    
 }
 
 .titulo2 p{
-    margin-left: 30rem;
+    text-align: center;
     margin-top: 7px;
-    
 }
 
 .fa-titulos{
     color: black;
+   
 }
 
 .titulo3{
-    margin: 1rem 0;
     border: 2px solid #46737F;
     background-color: #62A1AA;
     display: flex;
     padding: 10px 3rem;
-    border-radius: 10px;
     color: white;
+    border-radius: 10px;
+    margin: 1rem 0;
 }
 
 .titulo3 p{
-    margin-left: 28rem;
+    text-align: center;
     margin-top: 7px;
 }
 
@@ -194,7 +195,7 @@ header{
 }
 
 .titulo4 p{
-    margin-left: 30rem;
+   
     margin-top: 7px;
 }
 
@@ -202,8 +203,193 @@ header{
 /* ::::::::::::::::::::::::::::::::::::::::::::::: DATOS DEL PACIENTE :::::::::::::::::::::::::::::::::::::::: */
 .fila1{
     display: flex;
+    flex-direction: column;
+    width: auto;
 }
 
+.cuadro1-1 input{
+    width: 100%;
+    height: fit-content;
+    border: 2.8px solid #62A1AA;
+    border-radius: 3px;
+    padding: 0.5rem;
+    
+}
+.cuadro1-1{
+    margin-top: 1rem;
+
+    width: 93%;
+}
+
+.cuadro1-2 input{
+    width: 100%;
+    height: fit-content;
+    border: 2.8px solid #62A1AA;
+    border-radius: 3px;
+    padding: 0.5rem;
+    
+}
+.cuadro1-2{
+    margin-top: 1rem;
+    width:93%;
+}
+
+.cuadro1-10{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.cuadro1-12 input{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    border: 2.8px solid #62A1AA;
+    border-radius: 3px;
+    padding: 0.5rem;
+}
+
+.cuadro1-12{
+    margin-top: 1rem;
+    width:93%;
+}
+
+.fila2{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.cuadro1-select{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+select {
+    width: 100%;
+    position: relative;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    border: 2.8px solid #62A1AA;
+    font-weight: 300;   
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: INFO DEL CONTACTO :::::::::::::::::::::::::::::::::::::::: */
+.select1{
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.select2{
+    
+    margin-bottom: 0.5rem;
+}
+
+.fila3{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: estado de salud :::::::::::::::::::::::::::::::::::::::: */
+.salud{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+#preexistencias{
+    width: 93%;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cuadro1-alergias input{
+    width: 93%;
+    height: fit-content;
+    border: 2.8px solid #62A1AA;
+    border-radius: 3px;
+    padding: 0.5rem;
+    
+}
+.cuadro1-alergias{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    width: 93%;
+}
+
+.texto1{
+    margin: 0.5rem;
+}
+
+.btn-si-no{
+    text-align: center;
+    margin: 1.5rem;
+}
+
+
+
+
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: PIE DE PAGINA :::::::::::::::::::::::::::::::::::::::: */
+.pie-pagina .grupo-2{
+    background-color: #000000e1;
+    padding: 15px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    font-family: Raleway;
+    
+}
+
+.pie-pagina{
+    margin-top: 3rem;
+
+}
+
+@media (min-width: 768px) {
+    .seccion1, .fila1, .cuadro1-10{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .cuadro1 input{
+        width: 200px;
+        height: fit-content;
+        border: 2.8px solid #62A1AA;
+        border-radius: 3px;
+        padding: 0.5rem;
+    }
+    
+    .cuadro1{
+        
+        margin-left: 1rem;
+        width: 20%;
+        
+    }
+    
+    .cuadro2 input{
+        padding: 0.5rem;
+        font-size: 15px;
+        width: 200px;
+        height: fit-content;
+        border: 2.8px solid #62A1AA;
+        border-radius: 3px;
+    }
+    .cuadroAfuera{
+    
+    overflow-y:hidden;
+}
 .cuadro1-1 input{
     width: 550px;
     height: fit-content;
@@ -278,6 +464,7 @@ select {
 }
 
 .select2{
+    
     margin-bottom: 0.5rem;
 }
 
@@ -321,84 +508,13 @@ select {
     margin: 1.5rem;
 }
 
+button{
 
-
-/* ::::::::::::::::::::::::::::::::::::::::::::::: PIE DE PAGINA :::::::::::::::::::::::::::::::::::::::: */
-.pie-pagina .grupo-2{
-    background-color: #000000e1;
-    padding: 15px 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    text-align: center;
 }
 
-.pie-pagina .grupo-2 small{
-    font-size: 15px;
-    font-family: Raleway;
     
-}
+    
 
-.pie-pagina{
-    margin-top: 3rem;
-}
-
-
-/* :::::::::: CELULAR :::::::::: */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    header{width: 1290px;overflow: hidden;}
-    .franjaNaranja{width: 1290px;}
-    .titulo{width: 1270px;}
-    .cuadroAfuera{width: 1160px;}
-    .dentro{overflow-x: hidden;}
-    .cuadro1-1{width: 46%;}
-    .cuadro1-12 input{width: 500px;}
-    #documentoTI{margin-left: -2.5rem;}
-    .select1{margin-right: 1rem;}
-    #departamento{width: 530px;}
-    .select2{margin-left: -0.9rem;}
-    .cuadro1-alergias input{width: 250px;}
-    .pie-pagina .grupo-2{width: 1270px;}
-}
-
-@media screen and (min-width: 760px){
-    .dentro{
-        display: block;
-        overflow-x: auto;
-    }
-}
-
-/*
-@media (min-width: 767px){
-    header{width: 1290px;overflow: hidden;}
-    .franjaNaranja{width: 1290px;}
-    .titulo{width: 1270px;}
-    .cuadroAfuera{width: 1160px;}
-    .dentro{overflow-x: hidden;}
-    .cuadro1-1{width: 46%;}
-    .cuadro1-12 input{width: 500px;}
-    #documentoTI{margin-left: -2.5rem;}
-    .select1{margin-right: 1rem;}
-    #departamento{width: 530px;}
-    .select2{margin-left: -0.9rem;}
-    .cuadro1-alergias input{width: 250px;}
-    .pie-pagina .grupo-2{width: 1270px;}
-}
-*/
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    header{width: 1290px;overflow: hidden;}
-    .franjaNaranja{width: 1290px;}
-    .titulo{width: 1270px;}
-    .cuadroAfuera{width: 1160px;}
-    .dentro{overflow-x: hidden;}
-    .cuadro1-1{width: 46%;}
-    .cuadro1-12 input{width: 500px;}
-    #documentoTI{margin-left: -2.5rem;}
-    .select1{margin-right: 1rem;}
-    #departamento{width: 530px;}
-    .select2{margin-left: -0.9rem;}
-    .cuadro1-alergias input{width: 250px;}
-    .pie-pagina .grupo-2{width: 1270px;}
+    
 }
 
