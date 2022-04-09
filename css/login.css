@@ -171,7 +171,6 @@ main{
     .form-group input{width: 60%;}
 
     .login{
-        top: 100%;
         left: 10%;
     }
 }
