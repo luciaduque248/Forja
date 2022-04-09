@@ -81,8 +81,8 @@ main{
     height: 500px;
     border-radius: 30px;
     position: absolute; 
-    top: 50%;
-    left: 50%;
+    top: 190%;
+    left: 32%;
     transform: translate(-50%, 10%);
    
 }
@@ -169,6 +169,15 @@ main{
     .btnj{margin-left: -15rem;}
     .logo img{width: 100%; max-width: 200px; margin-bottom: 1rem;}
     .form-group input{width: 60%;}
+
+    .login{
+        top: 190%;
+        left: 10%;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .login{left: 50px;}
+    .btnj{margin-left: -40px;}
 }
 
 @media screen and (min-width: 720px){
@@ -183,6 +192,7 @@ main{
         
     } 
 }
+
 @media screen and (min-width: 1024px){
     .orden{margin: 0rem;}
     .btnj{margin-left: -7rem;}
