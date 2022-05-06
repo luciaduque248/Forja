@@ -1,14 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-:root{
-        --Rufous:#A40101;
-        --Viridian-green:#2CA3AB;
-        --Silver:#C4C4C4;
-        --orange:rgb(220, 118, 51 );
-        --Cadet: rgb(11, 87, 149);
+:root {
+    --Rufous: #A40101;
+    --Viridian-green: #2CA3AB;
+    --Silver: #C4C4C4;
+    --orange: #dc7633;
+    --Cadet: rgb(11, 87, 149);
+    --border: #62A1AA;
+    --colorCuadro: #c7c6c6;
+    --bordeCuadro: #868585;
+
+    --backgroundTitulos: #62A1AA;
+    --bordeTitulos: #46737F;
 }
 
 
@@ -17,61 +23,73 @@ body {
     font-size: 16px;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: 'Poppins', sans-serif;
     color: var(--dark-color);
 }
 
-p{
+p {
     color: var(--dark-color);
     text-align: justify;
 }
 
-/* :::::::::::::::::::::::::::::::::::::::::::: HEADER :::::::::::::::::::::::::::::::::::::::::::::::: */
-body{overflow-x: hidden;}
-header{
-    display: flex;
-    background-color: rgb(63, 62, 62);
-    width: 100%;max-width: 1500px;
+a{
+    text-decoration: none;
 }
 
-.logo{
+/* :::::::::::::::::::::::::::::::::::::::::::: HEADER :::::::::::::::::::::::::::::::::::::::::::::::: */
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    background-color: rgb(63, 62, 62);
+    width: 100vw;
+    max-width: 1500px;
+}
+
+.logo {
     width: 88%;
     margin: 1rem 0;
 }
 
-.iconos{
+.iconos {
     width: 12%;
     margin: 1rem 0;
 
 }
 
-.iconos i{color: black;}
+.iconos i {
+    color: black;
+}
 
-.fa-house-user{
+.fa-house-user {
     background-color: rgb(218, 216, 216);
     padding: 0.8rem;
     border-radius: 50%;
     border: 3px solid rgb(2, 190, 190);
 }
 
-.fa-power-off{
+.fa-power-off {
     background-color: rgb(218, 216, 216);
     padding: 0.8rem;
     border-radius: 50%;
     border: 3px solid rgb(2, 190, 190);
 }
 
-.franjaNaranja{
+.franjaNaranja {
     background-image: url(../img/3.\ franjaninios.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height:70px;
+    height: 70px;
     border-bottom: 5px solid rgb(2, 190, 190);
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::: ENCABEZADO :::::::::::::::::::::::::::::::::::::::::::::::: */
-.cuadroAfuera button{
+.cuadroAfuera button {
     margin: 1rem 35rem;
     background-color: rgb(214, 102, 27);
     height: 30%;
@@ -80,251 +98,302 @@ header{
     border: none;
 }
 
-.cuadroAfuera a{
+.cuadroAfuera a {
     text-decoration: none;
     color: white;
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::: TITULO GENERAL :::::::::::::::::::::::::::::::::::::::::::::::: */
 
-.titulo{
+.titulo {
     background-color: rgb(22, 22, 80);
     color: white;
     margin: 0 0.3rem;
     width: auto;
     text-align: center;
     border-radius: 5px;
-    
+
 }
 
-.titulo h1{
+.titulo h1 {
     font-weight: 400;
     padding: 5px 0;
-   
+
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::: RECUADROS  :::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::::::::::::::::::::::::::::::::::::::::::::: contenido (GRID) :::::::::::::::::::::::::::::::::::::::: */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 1fr 1fr 50px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "general general general"
+        "general general general"
+        "button button button";
+}
 
-.cuadroAfuera{
-    border: 2px solid gray;
-    margin: 0 0.3rem;
+.button{
+    grid-area: button;
+    margin: auto;
+}
+
+.general {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: grid;
+    grid-template-rows: 70px 230px 230px 118px 100px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "line1 line1"
+        "datosPaciente datosPaciente"
+        "infoContact infoContact"
+        "estadoSalud estadoSalud"
+        "infoAdicional infoAdicional";
+    grid-area: general;
+}
+
+.line1 {
+    display: grid;
+    grid-template-columns: 250px 150px;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "fecha noRegistro";
+    grid-area: line1;
+}
+
+.fecha {
+    grid-area: fecha;
+}
+
+.noRegistro {
+    grid-area: noRegistro;
+}
+
+.datosPaciente {
+    display: grid;
+    grid-template-rows: 60px 50px 50px 50px;
+    gap: 6px 12px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo1 titulo1"
+        "nombre apellido"
+        "identificacion tipoIdentity"
+        "nacimiento edad";
+    grid-area: datosPaciente;
+}
+
+.titulo1 {
+    grid-area: titulo1;
+}
+
+.nombre {
+    grid-area: nombre;
+}
+
+.apellido {
+    grid-area: apellido;
+}
+
+.identificacion {
+    grid-area: identificacion;
+}
+
+.tipoIdentity {
+    grid-area: tipoIdentity;
+}
+
+.nacimiento {
+    grid-area: nacimiento;
+}
+
+.edad {
+    grid-area: edad;
+}
+
+.infoContact {
+    display: grid;
+    grid-template-rows: 60px 50px 50px 50px;
+    gap: 0px 12px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo2 titulo2"
+        "departamento municipio"
+        "direccion correo"
+        "telFijo telCel";
+    grid-area: infoContact;
+}
+
+.titulo2 {
+    grid-area: titulo2;
+}
+
+.departamento {
+    grid-area: departamento;
+}
+
+.municipio {
+    grid-area: municipio;
+}
+
+.direccion {
+    grid-area: direccion;
+}
+
+.correo {
+    grid-area: correo;
+}
+
+.telFijo {
+    grid-area: telFijo;
+}
+
+.telCel {
+    grid-area: telCel;
+}
+
+.estadoSalud {
+    display: grid;
+    grid-template-rows: 60px 50px;
+    gap: 06px 12px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo3 titulo3 titulo3"
+        "preexistencias discapacidad alergias";
+    grid-area: estadoSalud;
+}
+
+.titulo3 {
+    grid-area: titulo3;
+}
+
+.preexistencias {
+    grid-area: preexistencias;
+}
+
+.discapacidad {
+    grid-area: discapacidad;
+}
+
+.alergias {
+    grid-area: alergias;
+}
+
+.infoAdicional {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "info1 info1 info1"
+        "info2 info2 info2";
+    grid-area: infoAdicional;
+}
+
+.info1 {
+    grid-area: info1;
+}
+
+.info2 {
+    grid-area: info2;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: CONTENIDO ESTILOS :::::::::::::::::::::::::::::::::::::::: */
+.container{
+    background-color: white;
+    border: 2px solid #868585;
     padding: 3rem;
-    width: auto;
+    margin: 0 4px;
+    border-radius: 3px;
 }
 
-.dentro{
-    background-color: rgb(199, 198, 198);
-    border: 2px solid rgb(134, 133, 133);
+.general{
+    padding: 2.5rem 1rem;
     border-radius: 10px;
-    padding: 30px 12px;
+    background-color: #c7c6c6;
+    border: 2px solid #868585;
+
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::: CONTENIDO  :::::::::::::::::::::::::::::::::::::::::::::::: */
-.seccion1{
-    display: flex;
-    flex-wrap: wrap;
+#date{
+    width: 17vw;
 }
 
-.cuadro1 input{
-    width: 200px;
-    height: fit-content;
-    border: 2.8px solid #62A1AA;
-    border-radius: 3px;
-    padding: 0.5rem;
+#registro{
+    width: 20vw;
 }
 
-.cuadro1{
-    margin-left: 1rem;
-    width: 20%;
-}
-
-.cuadro2 input{
-    padding: 0.5rem;
-    font-size: 15px;
-    width: 200px;
-    height: fit-content;
-    border: 2.8px solid #62A1AA;
-    border-radius: 3px;
-}
-
-.titulo2{
-    border: 2px solid #46737F;
-    background-color: #62A1AA;
-    display: flex;
-    padding: 10px 3rem;
+.titulos{
     color: white;
-    border-radius: 10px;
-    margin: 1rem 0;
-}
-
-.titulo2 p{
-    margin-left: 30rem;
-    margin-top: 7px;
-    
-}
-
-.fa-titulos{
-    color: black;
-}
-
-.titulo3{
-    margin: 1rem 0;
-    border: 2px solid #46737F;
+    width: 88.3vh;
+    display: flex;
+    align-items: center;
     background-color: #62A1AA;
-    display: flex;
-    padding: 10px 3rem;
-    border-radius: 10px;
-    color: white;
-}
-
-.titulo3 p{
-    margin-left: 28rem;
-    margin-top: 7px;
-}
-
-.titulo4{
-    margin: 1rem 0;
     border: 2px solid #46737F;
-    background-color: #62A1AA;
-    display: flex;
-    padding: 10px 3rem;
-    border-radius: 10px;
-    color: white;
-    font-size: 20px;
+    border-radius: 5px;
 }
 
-.titulo4 p{
-    margin-left: 30rem;
-    margin-top: 7px;
+.titulos i{color: black; flex-grow: 2; padding-left: 5rem;}
+.titulos p{flex-grow: 2;}
+
+input{
+    padding: 10px 5px;
+    border: 2px solid #62A1AA;
+    width: 42vw;
 }
 
-
-/* ::::::::::::::::::::::::::::::::::::::::::::::: DATOS DEL PACIENTE :::::::::::::::::::::::::::::::::::::::: */
-.fila1{
-    display: flex;
+select{
+    width: 43vw;
+    padding: 6.5px 5px;
+    border: 2px solid #62A1AA;
 }
 
-.cuadro1-1 input{
-    width: 550px;
-    height: fit-content;
-    border: 2.8px solid #62A1AA;
-    border-radius: 3px;
-    padding: 0.5rem;
-    
-}
-.cuadro1-1{
-    margin-top: 1rem;
-    margin-left: 1rem;
-    width: 50%;
-}
-
-.cuadro1-2 input{
-    width: 550px;
-    height: fit-content;
-    border: 2.8px solid #62A1AA;
-    border-radius: 3px;
-    padding: 0.5rem;
-    
-}
-.cuadro1-2{
-    margin-top: 1rem;
-    width:20%;
-}
-
-.cuadro1-10{
-    display: flex;
-    margin: 1rem 0;
-}
-
-.cuadro1-12 input{
-    display: flex;
-    width: 550px;
-    height: fit-content;
-    border: 2.8px solid #62A1AA;
-    border-radius: 3px;
-    padding: 0.5rem;
-}
-
-.cuadro1-12{
-    margin-top: 1rem;
-    width:70%;
-    margin-right: 2.3rem;
-    margin-left: 1rem;
-}
-
-.fila2{
-    display: flex;
-}
-
-.cuadro1-select{
-    margin-top: 1rem;
-}
-
-select {
-    width: 570px;
-    position: relative;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 3px;
-    border: 2.8px solid #62A1AA;
-    font-weight: 300;   
-}
-
-/* ::::::::::::::::::::::::::::::::::::::::::::::: INFO DEL CONTACTO :::::::::::::::::::::::::::::::::::::::: */
-.select1{
-    margin-right: 2.5rem;
-    margin-left: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.select2{
-    margin-bottom: 0.5rem;
-}
-
-.fila3{
-    display: flex;
-}
-
-/* ::::::::::::::::::::::::::::::::::::::::::::::: estado de salud :::::::::::::::::::::::::::::::::::::::: */
-.salud{
-    display: flex;
+#dateNac{
+    width: 42vw;
 }
 
 #preexistencias{
-    width: 380px;
-    margin-top: 0.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    width: 30vw;
 }
 
-.cuadro1-alergias input{
-    width: 340px;
-    height: fit-content;
-    border: 2.8px solid #62A1AA;
-    border-radius: 3px;
-    padding: 0.5rem;
-    
-}
-.cuadro1-alergias{
-    margin-top: 0.5rem;
-    margin-left: 1rem;
-    width: 50%;
+#alergiasInput{
+    width: 22vw;
 }
 
-.texto1{
-    margin: 0.5rem;
+#pruebaCovid{
+    width: 10vw;
 }
 
 .btn-si-no{
-    text-align: center;
-    margin: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 20rem;
 }
+
+
+.save{
+    margin: 1rem 0;
+    width: 12vw;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #dc7633;
+}
+
+.save a{
+    color: white;
+    
+}
+
+
 
 
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::: PIE DE PAGINA :::::::::::::::::::::::::::::::::::::::: */
-.pie-pagina .grupo-2{
+.pie-pagina .grupo-2 {
     background-color: #000000e1;
     padding: 15px 10px;
     font-family: 'Poppins', sans-serif;
@@ -333,72 +402,41 @@ select {
     text-align: center;
 }
 
-.pie-pagina .grupo-2 small{
+.pie-pagina .grupo-2 small {
     font-size: 15px;
     font-family: Raleway;
-    
+
 }
 
-.pie-pagina{
+.pie-pagina {
     margin-top: 3rem;
 }
 
-
-/* :::::::::: CELULAR :::::::::: */
+/* :::::::::::::::::::::::::::::::::::::: MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::: */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    header{width: 1290px;overflow: hidden;}
-    .franjaNaranja{width: 1290px;}
-    .titulo{width: 1270px;}
-    .cuadroAfuera{width: 1160px;}
-    .dentro{overflow-x: hidden;}
-    .cuadro1-1{width: 46%;}
-    .cuadro1-12 input{width: 500px;}
-    #documentoTI{margin-left: -2.5rem;}
-    .select1{margin-right: 1rem;}
-    #departamento{width: 530px;}
-    .select2{margin-left: -0.9rem;}
-    .cuadro1-alergias input{width: 250px;}
-    .pie-pagina .grupo-2{width: 1270px;}
+    header{
+        width: 20vw;
+        flex-direction: column;
+    }
+
+    .logo, .iconos{
+        display: flex;
+        margin: 1rem auto;
+    }
+    
 }
 
-@media screen and (min-width: 760px){
-    .dentro{
-        display: block;
-        overflow-x: auto;
+@media (min-width: 481px) and (max-width: 767px) {
+    header{
+        width: 100vw;
+        flex-direction: column;
+    }
+    .logo, .iconos{
+        display: flex;
+        margin: 1rem auto;
     }
 }
 
-/*
-@media (min-width: 767px){
-    header{width: 1290px;overflow: hidden;}
-    .franjaNaranja{width: 1290px;}
-    .titulo{width: 1270px;}
-    .cuadroAfuera{width: 1160px;}
-    .dentro{overflow-x: hidden;}
-    .cuadro1-1{width: 46%;}
-    .cuadro1-12 input{width: 500px;}
-    #documentoTI{margin-left: -2.5rem;}
-    .select1{margin-right: 1rem;}
-    #departamento{width: 530px;}
-    .select2{margin-left: -0.9rem;}
-    .cuadro1-alergias input{width: 250px;}
-    .pie-pagina .grupo-2{width: 1270px;}
-}
-*/
-
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    header{width: 1290px;overflow: hidden;}
-    .franjaNaranja{width: 1290px;}
-    .titulo{width: 1270px;}
-    .cuadroAfuera{width: 1160px;}
-    .dentro{overflow-x: hidden;}
-    .cuadro1-1{width: 46%;}
-    .cuadro1-12 input{width: 500px;}
-    #documentoTI{margin-left: -2.5rem;}
-    .select1{margin-right: 1rem;}
-    #departamento{width: 530px;}
-    .select2{margin-left: -0.9rem;}
-    .cuadro1-alergias input{width: 250px;}
-    .pie-pagina .grupo-2{width: 1270px;}
+    
 }
-

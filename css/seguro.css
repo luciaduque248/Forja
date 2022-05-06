@@ -29,7 +29,6 @@ p{
 /* :::::::::::::::::::::::::::::::::: ¿Seguro? :::::::::::::::::::::::::::::::::::::::: */
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
     background-image: url(../img/10.png);
     background-size: cover;
     width: 100%;
@@ -39,26 +38,36 @@ body {
 
 .seguro{
     background-color: white;
-    width: 300px;
+    width: 30vw;
     text-align: center;
     padding: 2rem;
-    border-radius: 2px;
-   
+    border-radius: 5px;
+    padding: 3rem;
     position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
 }
 
+.seguro img{
+    width: 25vw;
+}
+
 .seguro p{
     text-align: center;
     color: rgb(99, 98, 98);
-    font-size: larger;
+    font-size: large;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
 }
 
 .btn1{
     padding: 0.5rem 1rem;
-    margin-top: 0.8rem;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     background-color: rgb(218, 106, 32);
     color: white;
@@ -73,7 +82,7 @@ body {
 
 .btn2{
     padding: 0.5rem 1rem;
-    margin-top: 0.8rem;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     background-color: rgb(33, 33, 121);
     color: white;
@@ -82,6 +91,19 @@ body {
 }
 
 .btn2 a{
+    text-align: center;
     text-decoration: none;
     color: white;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .botones{
+        flex-direction: column;
+    }
+
+    .btn2{
+        padding: 1rem 0;
+    }
+
+}
+  
