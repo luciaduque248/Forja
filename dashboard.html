@@ -22,6 +22,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="css/seguro.css">
+
 </head>
 
 <body>
@@ -56,9 +58,27 @@
                     <h1>BIENVENIDOS</h1>
                     <div class="rellenar">
                         <label for="documento" class="form-documento"></label>
-                        <input type="text" name="usuario" id="usuario" class="form-input"
-                            placeholder="Digite el numero de documento">
-                        <a href="seguro.html"><i class="fa-solid fa-magnifying-glass fa-iconos"></i></a>
+                        <input type="text" name="usuario" id="usuario" class="form-input" placeholder="Digite el numero de documento">
+                        <!--------------------------------MODAL---------------------------------------------->
+                            <!--estilos del modal: seguro.css-->
+                        <div class="modal1" id="modal1">
+                            <a href="#modal" class="cta">
+                                <i class="fa-solid fa-magnifying-glass fa-iconos"></i>
+                            </a>
+                        </div>
+                        <section id="modal" class="modal">
+                            <div class="modalContainer">
+                                <figure class="modalPicture">
+                                    <img src="img/0. logoforja.png" class="modalImg" alt="">
+                                </figure>
+                                <p class="modalP">Usuario no registrado,<br>¿desea realizar el registro?</p>
+                                <div class="buttons">
+                                    <button class="btn-1"><a href="pacientes.html">Si, gracias</button></a>
+                                    <button class="btn-2"><a href="#">Cancelar</button></a>
+                                </div>
+                            </div>
+                        </section>
+                        <!---------------------------------------------------------------------------------->
                         <a href="#"><i class="fa-solid fa-rotate-right fa-iconos"></i></a>
                     </div>
                 </div>
@@ -67,12 +87,9 @@
                 </div>
 
             </article>
-
-
-        </section>
         </section>
     </main>
-
+    
 </body>
 
 </html>

@@ -27,6 +27,10 @@ p{
     text-align: justify;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* ::::::::::::::::::::::::::::::::::::::::::::::::  HEADER :::::::::::::::::::::::::::::::::::::::::::::::: */
 @media screen and (min-width: 320px) {
     

@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="formulario">
-                    <form action="dashboard.html" method="" class="form-login">
+                    <form action="dashboard.html" name="form" class="form-login">
                         <div class="form-group">
                             <label for="usuario" class="form-label">Usuario</label>
                             <input autofocus type="text" name="usuario" id="usuario" class="form-input" required>
@@ -53,13 +53,14 @@
                             <a href="" class="form-olvido">¿Olvidaste tu contraseña</a>
                         </div>
 
-                        <button class="btn-naranja" type="submit">Ingresar</button>
-
+                        <input onclick=entrar() type=button value=Ingresar class="btn-naranja">
                     </form>
                 </div>
             </section>
         </section>
     </main>
+
+    <script src="/js/login.js"></script>
 </body>
 
 </html>

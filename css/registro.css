@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Rufous: #A40101;
+    --Viridian-green: #2CA3AB;
+    --Silver: #C4C4C4;
+    --orange: #dc7633;
+    --Cadet: rgb(11, 87, 149);
+    --border: #62A1AA;
+    --colorCuadro: #c7c6c6;
+    --bordeCuadro: #868585;
+
+    --backgroundTitulos: #62A1AA;
+    --bordeTitulos: #46737F;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+}
+
+p {
+    color: var(--dark-color);
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::: HEADER :::::::::::::::::::::::::::::::::::::::::::::::: */
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    background-color: rgb(63, 62, 62);
+    width: 100vw;
+    max-width: 1500px;
+}
+
+.logo {
+    width: 88%;
+    margin: 1rem 0;
+}
+
+.iconos {
+    width: 12%;
+    margin: 1rem 0;
+
+}
+
+.iconos i {
+    color: black;
+}
+
+.fa-house-user {
+    background-color: rgb(218, 216, 216);
+    padding: 0.8rem;
+    border-radius: 50%;
+    border: 3px solid rgb(2, 190, 190);
+}
+
+.fa-power-off {
+    background-color: rgb(218, 216, 216);
+    padding: 0.8rem;
+    border-radius: 50%;
+    border: 3px solid rgb(2, 190, 190);
+}
+
+.franjaNaranja {
+    background-image: url(../img/3.\ franjaninios.svg);
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+    border-bottom: 5px solid rgb(2, 190, 190);
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::: INFO :::::::::::::::::::::::::::::::::::::::::::::::: */
+.linea1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.save {
+    margin: 1rem 0;
+    width: fit-content;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #dc7633;
+}
+
+.save a {
+    color: white;
+    padding: 0 1rem;
+}
+
+.title {
+    padding: 0 1rem;
+}
+
+.title h1 {
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::: FORMULARIO (grid) :::::::::::::::::::::::::::::::::::::::::::::::: */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 180px 180px 250px 250px;
+    gap: 15px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "area1 area1 area1"
+        "area1 area1 area1"
+        "area2 area2 area2"
+        "area2 area2 area2";
+    margin-bottom: 3rem;
+}
+
+.area1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 56.5px 160px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "fechaDeRegistro fechaDeRegistro fechaDeRegistro"
+        "titulo1 titulo1 titulo1"
+        "inputs inputs inputs";
+    grid-area: area1;
+}
+
+.fechaDeRegistro {
+    grid-area: fechaDeRegistro;
+}
+
+.titulo1 {
+    grid-area: titulo1;
+}
+
+.inputs {
+    grid-area: inputs;
+}
+
+.area2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px 100px 100px 130px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo2 titulo2 titulo2"
+        "inputs2 inputs2 inputs2"
+        "input3 input3 input3"
+        "observaciones observaciones observaciones";
+    grid-area: area2;
+}
+
+.titulo2 {
+    grid-area: titulo2;
+}
+
+.inputs2 {
+    grid-area: inputs2;
+}
+
+.input3 {
+    grid-area: input3;
+}
+
+.observaciones {
+    grid-area: observaciones;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::: FORMULARIO (area 1) ::::::::::::::::::::::::::::::::::::::::::: */
+.area1 {
+    margin: 0 0.8rem;
+    padding: 2.5rem 1rem;
+    border-radius: 10px;
+    background-color: #c7c6c6;
+    border: 3px solid #686868;
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px 5px;
+    border: 2px solid #62A1AA;
+    width: 42vw;
+}
+
+select {
+    border-radius: 5px;
+    width: 43vw;
+    padding: 6.5px 5px;
+    border: 2px solid #62A1AA;
+}
+
+.fechaDeRegistro {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fechaDeRegistro input {
+    height: 20px;
+}
+
+.renglon1,
+.renglon2,
+.renglon3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::: FORMULARIO (area 2) ::::::::::::::::::::::::::::::::::::::::::: */
+.area2 {
+    margin: 0 0.8rem;
+    padding: 2.5rem 1rem;
+    border-radius: 10px;
+    background-color: #c7c6c6;
+    border: 3px solid #686868;
+}
+
+.area2 #biologico {
+    width: 20vw;
+}
+
+.titulo1,
+.titulo2 {
+    color: white;
+    width: 94vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    background-color: #62A1AA;
+    border: 2px solid #46737F;
+    border-radius: 5px;
+}
+
+.titulo1 i,
+.titulo2 i {
+    flex-grow: 2;
+    padding-left: 5rem;
+    font-size: 30px;
+}
+
+.titulo1 p,
+.titulo2 p {
+    flex-grow: 2;
+    font-size: 20px;
+}
+
+.observaciones {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    height: 100px;
+    padding: 10px 15px;
+    border: 4px dashed #62A1AA;
+    width: 42vw;
+    border-radius: 20px;
+}
+
+.input3 {
+    place-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input3 #biologico {
+    width: 28vw;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: PIE DE PAGINA :::::::::::::::::::::::::::::::::::::::: */
+.pie-pagina .grupo-2 {
+    background-color: #000000e1;
+    padding: 15px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+    font-family: Raleway;
+
+}
+
+.pie-pagina {
+    margin-top: 3rem;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::: */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .renglon1, .renglon2, .renglon3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 280px 280px 350px 350px;
+        gap: 15px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "area1 area1 area1"
+            "area1 area1 area1"
+            "area2 area2 area2"
+            "area2 area2 area2";
+        margin-bottom: 3rem;
+    }
+    .area1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 130px 110px 260px;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "fechaDeRegistro fechaDeRegistro fechaDeRegistro"
+            "titulo1 titulo1 titulo1"
+            "inputs inputs inputs";
+        grid-area: area1;
+    }
+
+    input {
+        border-radius: 5px;
+        padding: 10px 5px;
+        border: 2px solid #62A1AA;
+        width: 75vw;
+    }
+    
+    select {
+        border-radius: 5px;
+        width: 80vw;
+        padding: 6.5px 5px;
+        border: 2px solid #62A1AA;
+    }
+
+    .titulo1, .titulo2 {
+        color: white;
+        width: 80vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        background-color: #62A1AA;
+        border: 2px solid #46737F;
+        border-radius: 5px;
+    }
+    .fechaDeRegistro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .area2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 90px 190px 180px 170px;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "titulo2 titulo2 titulo2"
+            "inputs2 inputs2 inputs2"
+            "input3 input3 input3"
+            "observaciones observaciones observaciones";
+        grid-area: area2;
+    }
+    
+    .input3{
+        flex-direction: column;
+    }
+
+    .input3 #biologico {
+        width: 243px;
+    }
+
+
+    textarea {
+        height: 25vh;
+        padding: 10px 15px;
+        border: 4px dashed #62A1AA;
+        width: 42vw;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .titulo1, .titulo2 {
+        color: white;
+        width: 90vw;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        background-color: #62A1AA;
+        border: 2px solid #46737F;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .titulo1, .titulo2 {
+        color: white;
+        width: 92vw;
+        height: 5vw;
+        display: flex;
+        align-items: center;
+        background-color: #62A1AA;
+        border: 2px solid #46737F;
+        border-radius: 5px;
+    }
+}

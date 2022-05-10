@@ -1,109 +1,136 @@
-/* :::::::::::::::: PAGINA GENERAL:::::::::::::::::::::: */
-*{
-    margin: 0;
-    padding: 0;
-    
-}
-
-:root{
-        --Rufous:#A40101;
-        --Viridian-green:#2CA3AB;
-        --Silver:#C4C4C4;
-        --orange:rgb(220, 118, 51 );
-        --Cadet: rgb(11, 87, 149);
-}
-
-
-
-
-h1, h2, h3{
-    font-family: 'Poppins', sans-serif;
-    color: var(--dark-color);
-}
-
-p{
-    color: var(--dark-color);
-    text-align: justify;
-}
-
 /* :::::::::::::::::::::::::::::::::: ¿Seguro? :::::::::::::::::::::::::::::::::::::::: */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-image: url(../img/10.png);
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
 
-.seguro{
-    background-color: white;
-    width: 30vw;
-    text-align: center;
-    padding: 2rem;
-    border-radius: 5px;
-    padding: 3rem;
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-}
-
-.seguro img{
-    width: 25vw;
-}
-
-.seguro p{
-    text-align: center;
-    color: rgb(99, 98, 98);
-    font-size: large;
-}
-
-.botones{
+.buttons{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 1rem 0;
 }
 
-.btn1{
+.btn-1{
     padding: 0.5rem 1rem;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(218, 106, 32);
+    background-color: #da6a20;
     color: white;
     border-radius: 5px;
     border: 2px solid gray;
 }
 
-.btn1 a{
+.btn-1 a{
     text-decoration: none;
     color: white;
 }
 
-.btn2{
+.btn-2{
     padding: 0.5rem 1rem;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(33, 33, 121);
+    background-color: #212179;
     color: white;
     border-radius: 5px;
     border: 2px solid gray;
 }
 
-.btn2 a{
+.btn-2 a{
     text-align: center;
     text-decoration: none;
     color: white;
+}
+
+/* ::::::::::::::::::; modal :::::::::::::::::::::::: */ 
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4a4a4a7c;
+    display: flex;
+    --opacity: 0;
+    --pointer: none;
+
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity 0.5s;
+}
+
+.modal:target{
+    --opacity: var(--opacity);
+    --pointer: unset;
+}
+
+.modalContainer{
+    margin: auto;
+    background-color: white;
+    width: 30vw;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius: 1em;
+}
+
+.modalImg{
+    margin: auto;
+    width: 20vw;
+    display: block;
+}
+
+
+.modal:target .modalContainer{
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+}
+
+@keyframes scale-up-center {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.modalPicture{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 1em;
+}
+
+  
+.modalP{
+    text-align: center;
+    margin-bottom: 1em;
+    line-height: 1.5
+}
+
+.modalClose{
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    border-radius: 0.4em;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .botones{
+    .buttons{
         flex-direction: column;
     }
 
-    .btn2{
-        padding: 1rem 0;
+    .modalImg{
+        width: 30vw;
     }
 
+    .modalP{
+        font-size: 5vw;
+    }
+    .btn-2{
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+    }
 }
   
