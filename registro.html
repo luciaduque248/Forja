@@ -36,123 +36,126 @@
     </header>
 
     <section class="franjaNaranja"></section>
+    
+        <section class="linea1">
+            <p>Estado: Activo</p>
 
-    <section class="linea1">
-        <p>Estado: Activo</p>
+            <div class="button">
+                <button class="save"><a href="#" id="guardar" class="btn-alert" >Guardar cambios</button></a>
+                <button class="save"><a href="/dashboard.html">Cerrar</button></a>
+            </div>
+        </section>
 
-        <div class="button">
-            <button class="save"><a href="#">Guardar cambios</button></a>
-            <button class="save"><a href="#">Cerrar</button></a>
+        <div class="title">
+            <h1>Informacion del Paciente</h1>
         </div>
-    </section>
 
-    <div class="title">
-        <h1>Informacion del Paciente</h1>
-    </div>
+        <div class="container">
+            <div class="area1">
+                <div class="fechaDeRegistro">
+                    <input type="date" id="date" name="date" min="2000-01-01" max="2022-04-30" required>
 
-    <div class="container">
-        <div class="area1">
-            <div class="fechaDeRegistro">
-                <input type="date" id="date" name="date" min="2000-01-01" max="2022-04-30" required>
+                    <input name="Registro" id="registro" type="text" placeholder="No. de Registro" required>
+                </div>
+                <div class="titulo1">
+                    <i class="fa-solid fa-syringe fa-icon"></i>
+                    <p>DATOS PERSONALES</p>
+                </div>
+                <div class="inputs">
+                    <div class="renglon1">
+                        <input name="Nombre" id="Nombre" type="text" placeholder="Nombres" required>
 
-                <input name="Registro" id="registro" type="text" placeholder="No. de Registro" required>
+                        <input name="Apellidos" id="Nombre" type="text" placeholder="Apellidos" required>
+                    </div>
+
+                    <div class="renglon2">
+                        <input name="identificacion" id="identificacion" type="text"
+                            placeholder="Numero de identificacion" required>
+
+                        <input type="date" id="dateNac" name="date" min="2000-01-01" max="2022-04-30" required>
+                    </div>
+
+                    <div class="renglon3">
+                        <input type="number" placeholder="Edad" required>
+
+                        <select name="eps" id="eps" required>
+                            <option disabled selected>EPS</option>
+                            <option value="0">Salud Colmena</option>
+                            <option value="1">Salud Total</option>
+                            <option value="2">Cafesalud</option>
+                            <option value="3">Sanitas</option>
+                            <option value="4">Compensar</option>
+                            <option value="5">Saludcoop</option>
+                            <option value="6">Coomeva</option>
+                            <option value="7">Famisanar</option>
+                            <option value="8">Cruz Blanca</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div class="titulo1">
-                <i class="fa-solid fa-syringe fa-icon"></i>
-                <p>DATOS PERSONALES</p>
-            </div>
-            <div class="inputs">
-                <div class="renglon1">
-                    <input name="Nombre" id="Nombre" type="text" placeholder="Nombres" required>
+            <div class="area2">
+                <div class="titulo2">
+                    <i class="fa-solid fa-syringe fa-icon"></i>
+                    <p>INFORMACION DE VACUNACION</p>
+                </div>
+                <div class="inputs2">
+                    <div class="renglon1">
+                        <select name="sedes" id="sedes" required>
+                            <option disabled selected>Sede</option>
+                            <option value="0">Circunvalar</option>
+                            <option value="1">Corferias</option>
+                            <option value="2">Suba</option>
+                            <option value="3">Bosa</option>
+                            <option value="4">Centro</option>
+                        </select>
 
-                    <input name="Apellidos" id="Nombre" type="text" placeholder="Apellidos" required>
+                        <select name="sedes" id="sedes" required>
+                            <option disabled selected>¿Quien lo vacunó?</option>
+                            <option value="0">Maria Fernandez</option>
+                            <option value="1">Laura Osorio</option>
+                            <option value="2">Javier Merlano</option>
+                        </select>
+                    </div>
+
+                    <div class="renglon2">
+                        <input name="idProfesional" id="idProfesional" type="text" placeholder="ID del Profesional"
+                            required>
+
+                        <select name="dosis" id="dosis" required>
+                            <option disabled selected>Dosis</option>
+                            <option value="0">Primera vez</option>
+                            <option value="1">Segunda vez</option>
+                            <option value="2">Tercera vez</option>
+                            <option value="3">Refuerzo</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div class="renglon2">
-                    <input name="identificacion" id="identificacion" type="text" placeholder="Numero de identificacion"
-                        required>
 
-                    <input type="date" id="dateNac" name="date" min="2000-01-01" max="2022-04-30" required>
-                </div>
-
-                <div class="renglon3">
-                    <input type="number" placeholder="Edad" required>
-
-                    <select name="eps" id="eps" required>
-                        <option disabled selected>EPS</option>
-                        <option value="0">Salud Colmena</option>
-                        <option value="1">Salud Total</option>
-                        <option value="2">Cafesalud</option>
-                        <option value="3">Sanitas</option>
-                        <option value="4">Compensar</option>
-                        <option value="5">Saludcoop</option>
-                        <option value="6">Coomeva</option>
-                        <option value="7">Famisanar</option>
-                        <option value="8">Cruz Blanca</option>
+                <div class="input3">
+                    <select name="biologico" id="biologico" required>
+                        <option disabled selected>Biologico</option>
+                        <option value="0">Vacuna Pfizer</option>
+                        <option value="1">Vacuna SinoVac</option>
+                        <option value="2">Vacuna Johnson & Johnson</option>
+                        <option value="3">Vacuna Moderna</option>
+                        <option value="4">Vacuna Oxford, AstraZeneca</option>
                     </select>
+
+                    <input name="fechaDosis" id="biologico" type="text" placeholder="Fecha 1ra Dosis" required>
+
+                    <input name="fecha2daDosis" id="biologico" type="text" placeholder="Fecha 2da Dosis" required>
+                </div>
+
+                <div class="observaciones">
+                    <textarea name="observacion" id="observacion" cols="40" rows="7"
+                        placeholder="Observaciones adicionales"></textarea>
                 </div>
             </div>
         </div>
-        <div class="area2">
-            <div class="titulo2">
-                <i class="fa-solid fa-syringe fa-icon"></i>
-                <p>INFORMACION DE VACUNACION</p>
-            </div>
-            <div class="inputs2">
-                <div class="renglon1">
-                    <select name="sedes" id="sedes" required>
-                        <option disabled selected>Sede</option>
-                        <option value="0">Circunvalar</option>
-                        <option value="1">Corferias</option>
-                        <option value="2">Suba</option>
-                        <option value="3">Bosa</option>
-                        <option value="4">Centro</option>
-                    </select>
 
-                    <select name="sedes" id="sedes" required>
-                        <option disabled selected>¿Quien lo vacunó?</option>
-                        <option value="0">Maria Fernandez</option>
-                        <option value="1">Laura Osorio</option>
-                        <option value="2">Javier Merlano</option>
-                    </select>
-                </div>
-
-                <div class="renglon2">
-                    <input name="idProfesional" id="idProfesional" type="text" placeholder="ID del Profesional"
-                        required>
-
-                    <select name="dosis" id="dosis" required>
-                        <option disabled selected>Dosis</option>
-                        <option value="0">Primera vez</option>
-                        <option value="1">Segunda vez</option>
-                        <option value="2">Tercera vez</option>
-                        <option value="3">Refuerzo</option>
-                    </select>
-                </div>
-            </div>
-
-
-            <div class="input3">
-                <select name="biologico" id="biologico"  required>
-                    <option disabled selected>Biologico</option>
-                    <option value="0">Vacuna Pfizer</option>
-                    <option value="1">Vacuna SinoVac</option>
-                    <option value="2">Vacuna Johnson & Johnson</option>
-                    <option value="3">Vacuna Moderna</option>
-                    <option value="4">Vacuna Oxford, AstraZeneca</option>
-                </select>
-
-                <input name="fechaDosis" id="biologico" type="text" placeholder="Fecha 1ra Dosis" required>
-
-                <input name="fecha2daDosis" id="biologico" type="text" placeholder="Fecha 2da Dosis" required>
-            </div>
-
-            <div class="observaciones">
-                <textarea name="observacion" id="observacion" cols="40" rows="7"
-                    placeholder="Observacion adicionales"></textarea>
-            </div>
-        </div>
-    </div>
+    
+        <script src="js/registro.js"></script>
 </body>
 
 <footer class="pie-pagina">
