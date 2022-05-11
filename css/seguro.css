@@ -1,12 +1,12 @@
 /* :::::::::::::::::::::::::::::::::: ¿Seguro? :::::::::::::::::::::::::::::::::::::::: */
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: space-evenly;
     padding: 1rem 0;
 }
 
-.btn-1{
+.btn-1 {
     padding: 0.5rem 1rem;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -16,12 +16,12 @@
     border: 2px solid gray;
 }
 
-.btn-1 a{
+.btn-1 a {
     text-decoration: none;
     color: white;
 }
 
-.btn-2{
+.btn-2 {
     padding: 0.5rem 1rem;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -31,15 +31,15 @@
     border: 2px solid gray;
 }
 
-.btn-2 a{
+.btn-2 a {
     text-align: center;
     text-decoration: none;
     color: white;
 }
 
-/* ::::::::::::::::::; modal :::::::::::::::::::::::: */ 
+/* ::::::::::::::::::; modal :::::::::::::::::::::::: */
 
-.modal{
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -55,12 +55,12 @@
     transition: opacity 0.5s;
 }
 
-.modal:target{
+.modal:target {
     --opacity: var(--opacity);
     --pointer: unset;
 }
 
-.modalContainer{
+.modalContainer {
     margin: auto;
     background-color: white;
     width: 30vw;
@@ -71,42 +71,43 @@
     border-radius: 1em;
 }
 
-.modalImg{
+.modalImg {
     margin: auto;
     width: 20vw;
     display: block;
 }
 
 
-.modal:target .modalContainer{
+.modal:target .modalContainer {
     animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
 }
 
 @keyframes scale-up-center {
     0% {
-      transform: scale(0.5);
+        transform: scale(0.5);
     }
-    100% {
-      transform: scale(1);
-    }
-  }
 
-.modalPicture{
+    100% {
+        transform: scale(1);
+    }
+}
+
+.modalPicture {
     width: 90%;
     margin: 0 auto;
     max-width: 400px;
     margin-bottom: 1em;
 }
 
-  
-.modalP{
+
+.modalP {
     text-align: center;
     margin-bottom: 1em;
     line-height: 1.5
 }
 
-.modalClose{
+.modalClose {
     display: inline-block;
     border: 1px solid #333;
     padding: 1em 2em;
@@ -116,32 +117,262 @@
     border-radius: 0.4em;
 }
 
-.tab{
-    padding-left: 7rem;
+/* :::::::::::::::: CAS0 1 :::::::::::::::: */
+.padding {
+    font-weight: bolder;
+    padding-right: 3rem;
 }
 
-.tab2{
-    margin-left: 3rem;
+.padding1 {
+    font-weight: bolder;
+    padding-right: 1.4rem;
 }
-.tab3{
-    padding-left: 0.7rem;
+
+.padding2 {
+    font-weight: bolder;
+    padding-right: 7rem;
 }
+
+.padding3 {
+    font-weight: bolder;
+    padding-right: 5rem;
+}
+
+.padding4 {
+    font-weight: bolder;
+    padding-right: 7rem;
+}
+
+.left {
+    padding-left: 3rem;
+}
+
+.bold-color {
+    color: red;
+}
+
+/* :::::::::::::::: CAS0 2 :::::::::::::::: */
+.padding0 {
+    font-weight: bolder;
+    padding-right: 1rem;
+}
+
+.padding2-2 {
+    font-weight: bolder;
+    color: #212179;
+    padding-right: 3.2rem;
+}
+
+.padding3-2 {
+    font-weight: bolder;
+    color: #212179;
+    padding-right: 5.7rem;
+}
+
+.padding4-2 {
+    color: #da6a20;
+    font-weight: bolder;
+    padding-right: 5rem;
+}
+
+.padding5 {
+    color: #da6a20;
+    font-weight: bolder;
+    padding-right: 5.4rem;
+
+}
+
+.padding6 {
+    font-weight: bolder;
+    color: red;
+    padding-right: 7.8rem;
+}
+
+.left1-2 {
+    padding-left: 0rem;
+}
+
+/* :::::::::::::::: CAS0 3 :::::::::::::::: */
+.padding1-3 {
+    font-weight: bolder;
+    padding-right: 2.4rem;
+}
+
+.padding6-3 {
+    color: brown;
+    font-weight: bolder;
+    padding-left: 0.8rem;
+}
+
+.padding6-3 {
+    font-weight: bolder;
+    color: brown;
+    padding-right: 5.8rem;
+
+}
+
+/* :::::::::::::::::::::::::::::::: MEDIA QUERIES :::::::::::::::::::::::::::::::: */
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .buttons{
+    .buttons {
         flex-direction: column;
     }
 
-    .modalImg{
+    .modalImg {
         width: 30vw;
     }
 
-    .modalP{
+    .modalP {
         font-size: 5vw;
     }
-    .btn-2{
+
+    .btn-2 {
         margin-top: 1rem;
         padding: 0.5rem 0;
     }
+
+    .modalCaso1-1 {
+        width: 80vw;
+    }
+
+    .padding {
+        font-weight: bolder;
+        padding-right: 0rem;
+    }
+
+    .padding1 {
+        font-weight: bolder;
+        padding-right: 0rem;
+    }
+
+    .padding2 {
+        font-weight: bolder;
+        padding-right: 0rem;
+    }
+
+    .padding3 {
+        font-weight: bolder;
+        padding-right: 0rem;
+    }
+
+    .padding4 {
+        font-weight: bolder;
+        padding-right: 0rem;
+    }
+
+    .left {
+        padding-left: 0rem;
+    }
+
+    .bold-color {
+        color: red;
+    }
+
+    /* :::::::::::::::: CAS0 2 :::::::::::::::: */
+    .modalCaso2-2 {
+        width: 80vw;
+    }
+
+    .padding0 {
+        font-weight: bolder;
+        padding-right: 0rem;
+    }
+
+    .padding2-2 {
+        font-weight: bolder;
+        color: #212179;
+        padding-right: 0rem;
+    }
+
+    .padding3-2 {
+        font-weight: bolder;
+        color: #212179;
+        padding-right: 0rem;
+    }
+
+    .padding4-2 {
+        color: #da6a20;
+        font-weight: bolder;
+        padding-right: 0rem;
+    }
+
+    .padding5 {
+        color: #da6a20;
+        font-weight: bolder;
+        padding-right: 0rem;
+
+    }
+
+    .padding6 {
+        font-weight: bolder;
+        color: red;
+        padding-right: 0rem;
+    }
+
+    .left1-2 {
+        padding-left: 0rem;
+    }
+
+    /* :::::::::::::::: CAS0 3 :::::::::::::::: */
+    .modalCaso3-3{
+        width: 70vw;
+        overflow-y: scroll;
+    }
+
+    .padding1-3 {
+        font-weight: bolder;
+        padding-right: 0rem;
+    }
+
+    .padding6-3 {
+        color: brown;
+        font-weight: bolder;
+        padding-left: 0rem;
+    }
+
+    .padding6-3 {
+        font-weight: bolder;
+        color: brown;
+        padding-right: 0rem;
+    }
+
 }
-  
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .modalCaso1-1 {
+        width: 80vw;
+    }
+
+    .modalCaso2-2 {
+        width: 80vw;
+    }
+
+    /*::::::; caso 3 :::::::: */
+    .modalCaso3-3{
+        width: 70vw;
+        overflow-y: scroll;
+    }
+
+    .padding0, .padding1-3, .padding2-2, .padding3-2, .padding4-2, .padding5, .padding6-3, .bold-color3, .left, .left1-2{
+        padding: 0;
+    }
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .modalCaso1-1 {
+        width: 80vw;
+    }
+
+    .modalCaso2-2 {
+        width: 80vw;
+    }
+
+    .modalCaso3-3{
+        width: 70vw;
+    }
+
+    .padding0, .padding1-3, .padding2-2, .padding3-2, .padding4-2, .padding5, .padding6-3, .bold-color3, .left, .left1-2{
+        padding: 0;
+    }
+}
