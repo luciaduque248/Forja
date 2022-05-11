@@ -116,6 +116,17 @@
     border-radius: 0.4em;
 }
 
+.tab{
+    padding-left: 7rem;
+}
+
+.tab2{
+    margin-left: 3rem;
+}
+.tab3{
+    padding-left: 0.7rem;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .buttons{
         flex-direction: column;

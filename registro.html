@@ -41,7 +41,7 @@
             <p>Estado: Activo</p>
 
             <div class="button">
-                <button class="save"><a href="#" id="guardar" class="btn-alert" >Guardar cambios</button></a>
+                <button class="save"><a href="#" id="guardar" class="btn-alert" >Guardar cambios</a></button>
                 <button class="save"><a href="/dashboard.html">Cerrar</button></a>
             </div>
         </section>
@@ -53,7 +53,7 @@
         <div class="container">
             <div class="area1">
                 <div class="fechaDeRegistro">
-                    <input type="date" id="date" name="date" min="2000-01-01" max="2022-04-30" required>
+                    <input type="date" id="date" name="date" min="2000-01-01" max="2022-06-30" required>
 
                     <input name="Registro" id="registro" type="text" placeholder="No. de Registro" required>
                 </div>
@@ -63,20 +63,19 @@
                 </div>
                 <div class="inputs">
                     <div class="renglon1">
-                        <input name="Nombre" id="Nombre" type="text" placeholder="Nombres" required>
+                        <input name="Nombre" id="nombre" type="text" placeholder="Nombres" required>
 
-                        <input name="Apellidos" id="Nombre" type="text" placeholder="Apellidos" required>
+                        <input name="Apellidos" id="apellidos" type="text" placeholder="Apellidos" required>
                     </div>
 
                     <div class="renglon2">
-                        <input name="identificacion" id="identificacion" type="text"
-                            placeholder="Numero de identificacion" required>
+                        <input name="identificacion" id="identificacion" type="text" placeholder="Numero de identificacion" required>
 
-                        <input type="date" id="dateNac" name="date" min="2000-01-01" max="2022-04-30" required>
+                        <input type="date" id="dateNac" name="date" min="2000-01-01" max="2022-06-30" required>
                     </div>
 
                     <div class="renglon3">
-                        <input type="number" placeholder="Edad" required>
+                        <input type="number" placeholder="Edad" id="edad" required>
 
                         <select name="eps" id="eps" required>
                             <option disabled selected>EPS</option>
@@ -109,7 +108,7 @@
                             <option value="4">Centro</option>
                         </select>
 
-                        <select name="sedes" id="sedes" required>
+                        <select name="sedes" id="quienLoVacuno" required>
                             <option disabled selected>¿Quien lo vacunó?</option>
                             <option value="0">Maria Fernandez</option>
                             <option value="1">Laura Osorio</option>
